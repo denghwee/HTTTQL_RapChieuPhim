@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<fx:root type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" stylesheets="@../../css/Font.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView fx:id="image" fitHeight="250.0" fitWidth="180.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../src/images/ExampleImage.png" />
+               </image></ImageView>
+            <Text fx:id="name" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="fontBigSize" text="Tên phim" textAlignment="CENTER" wrappingWidth="180.0" />
+            <HBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Label text="Tên phòng: " />
+                  <Text fx:id="room" strokeType="OUTSIDE" strokeWidth="0.0" text="Tên phòng" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Label text="Giá vé: " />
+                  <Text fx:id="cost" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="fontBigSize" text="Giá vé" />
+               </children>
+            </HBox>
+           <HBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Label text="Số ghế: " />
+                  <Text fx:id="numberSeats" strokeType="OUTSIDE" strokeWidth="0.0" text="Số ghế" />
+               </children>
+            </HBox>
+            <Label fx:id="time" alignment="CENTER" minHeight="80.0" minWidth="80.0" style="-fx-background-radius: 50%; -fx-background-color: #69e9f5;" text="Thời gian" />
+         </children>
+      </VBox>
+      <Label>
+         <contextMenu>
+            <ContextMenu fx:id="contextMenu" />
+         </contextMenu>
+      </Label>
+   </children>
+</fx:root>
